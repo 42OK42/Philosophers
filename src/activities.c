@@ -6,11 +6,11 @@
 /*   By: okrahl <okrahl@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 14:35:11 by okrahl            #+#    #+#             */
-/*   Updated: 2024/04/01 18:15:36 by okrahl           ###   ########.fr       */
+/*   Updated: 2024/04/17 16:39:56 by okrahl           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../include/philosophers.h"
 
 int	eat(t_philosopher *philosopher, long start_time)
 {

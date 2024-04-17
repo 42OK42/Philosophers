@@ -6,11 +6,11 @@
 /*   By: okrahl <okrahl@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 17:26:10 by okrahl            #+#    #+#             */
-/*   Updated: 2024/03/25 20:56:12 by okrahl           ###   ########.fr       */
+/*   Updated: 2024/04/17 16:43:44 by okrahl           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../include/philosophers.h"
 
 int	check_all_here(t_philosopher *philosopher)
 {
@@ -92,7 +92,6 @@ int	every_second_ate(int odd_or_even, t_data *data)
 
 void	*routine(void *arg)
 {
-	int				i;
 	t_philosopher	*philos;
 	t_data			*data;
 	int				odd_or_even;
@@ -101,7 +100,6 @@ void	*routine(void *arg)
 	odd_or_even = 0;
 	philos = (t_philosopher *)arg;
 	data = philos->data;
-	i = philos->index;
 	while (check_all_created(data) == 0)
 		usleep(100);
 	if (handle_solo(philos) != 1)

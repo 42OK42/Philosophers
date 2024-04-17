@@ -6,11 +6,11 @@
 /*   By: okrahl <okrahl@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 16:44:29 by okrahl            #+#    #+#             */
-/*   Updated: 2024/03/22 16:46:41 by okrahl           ###   ########.fr       */
+/*   Updated: 2024/04/17 16:39:48 by okrahl           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../include/philosophers.h"
 
 int	handle_solo(t_philosopher *philosopher)
 {

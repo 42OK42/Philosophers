@@ -6,11 +6,11 @@
 /*   By: okrahl <okrahl@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 14:48:40 by okrahl            #+#    #+#             */
-/*   Updated: 2024/03/22 16:48:02 by okrahl           ###   ########.fr       */
+/*   Updated: 2024/04/17 16:39:34 by okrahl           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../include/philosophers.h"
 
 long	get_timestamp_ms(long start_time)
 {

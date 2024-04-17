@@ -6,45 +6,64 @@
 #    By: okrahl <okrahl@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/10 18:18:03 by okrahl            #+#    #+#              #
-#    Updated: 2024/03/25 13:37:47 by okrahl           ###   ########.fr        #
+#    Updated: 2024/04/17 16:43:08 by okrahl           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME			=	philo
+# COLORS FOR PRINTING
+GREEN = \033[0;32m
+RESET = \033[0m
 
-SRCS			=	philosophers.c \
-					helper.c \
-					handle_forks.c \
-					init_data.c \
-					activities.c \
-					update_time.c \
-					routine.c \
-					clean_up.c \
-					handle_one.c \
-					main.c
+# DIRECTORIES
+OBJ_DIR = obj
+SRC_DIR = src
+INCL_DIR = incl
 
-OBJS			=	${SRCS:.c=.o}
+# EXECUTABLE NAME
+NAME = philo
 
-HEAD			=	-I includes
+# SOURCE FILES
+SRCS =  philosophers.c \
+		helper.c \
+		handle_forks.c \
+		init_data.c \
+		activities.c \
+		update_time.c \
+		routine.c \
+		clean_up.c \
+		handle_one.c \
+		main.c
 
-CC				=	cc
+# OBJECT FILES
+OBJS = $(SRCS:%.c=$(OBJ_DIR)/%.o)
 
-CFLAGS			=	-Wall -Werror -Wextra #-g3 -fsanitize=address
+# COMPILER
+CC = gcc
 
-%.o: %.c
-	${CC} ${CFLAGS} ${HEAD} -c $< -o $@
+# COMPILATION FLAGS
+CFLAGS = -Wall -Wextra -Werror -I$(INCL_DIR)
 
-$(NAME)			:	${OBJS}
-					${CC} ${OBJS} ${CFLAGS} -o ${NAME}
+# COMMANDS
+RM = rm -f
+MKDIR = mkdir -p
 
-all				:	${NAME}
+# RULES
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
+	@$(MKDIR) $(OBJ_DIR)
+	@$(CC) $(CFLAGS) -c $< -o $@
 
-clean			:
-					@rm -rf ${OBJS}
+all : $(NAME)
 
-fclean			:	clean
-					@rm -rf ${NAME}
+$(NAME) : $(OBJS)
+	@$(CC) $(OBJS) -o $(NAME)
+	@echo "$(GREEN)./$(NAME) is ready!$(RESET)"
 
-re				:	fclean all
+fclean : clean
+	@$(RM) $(NAME)
 
-.PHONY			:	all clean fclean re
+clean :
+	@$(RM) -r $(OBJ_DIR)
+
+re : fclean all
+
+.PHONY : all clean fclean re

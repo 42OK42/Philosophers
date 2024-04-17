@@ -6,11 +6,11 @@
 /*   By: okrahl <okrahl@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/27 15:42:35 by okrahl            #+#    #+#             */
-/*   Updated: 2024/03/21 21:16:35 by okrahl           ###   ########.fr       */
+/*   Updated: 2024/04/17 16:39:43 by okrahl           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../include/philosophers.h"
 
 t_philosopher	*init_philo(int index, t_data *data)
 {

@@ -6,11 +6,11 @@
 /*   By: okrahl <okrahl@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 16:18:23 by okrahl            #+#    #+#             */
-/*   Updated: 2024/03/21 22:43:57 by okrahl           ###   ########.fr       */
+/*   Updated: 2024/04/17 16:39:41 by okrahl           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../include/philosophers.h"
 
 int	input_check(int argc, char **argv)
 {

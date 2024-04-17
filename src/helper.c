@@ -6,11 +6,11 @@
 /*   By: okrahl <okrahl@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 14:25:16 by okrahl            #+#    #+#             */
-/*   Updated: 2024/03/26 13:25:23 by okrahl           ###   ########.fr       */
+/*   Updated: 2024/04/17 16:39:46 by okrahl           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../include/philosophers.h"
 
 int	assign_first_fork(t_philosopher *philosopher)
 {

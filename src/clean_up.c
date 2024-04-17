@@ -6,11 +6,11 @@
 /*   By: okrahl <okrahl@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 22:17:36 by okrahl            #+#    #+#             */
-/*   Updated: 2024/03/22 16:55:15 by okrahl           ###   ########.fr       */
+/*   Updated: 2024/04/17 16:39:54 by okrahl           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../include/philosophers.h"
 
 void	clean_up(t_data *data)
 {

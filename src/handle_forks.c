@@ -6,11 +6,11 @@
 /*   By: okrahl <okrahl@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/21 20:46:24 by okrahl            #+#    #+#             */
-/*   Updated: 2024/03/25 13:36:16 by okrahl           ###   ########.fr       */
+/*   Updated: 2024/04/17 16:39:51 by okrahl           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../include/philosophers.h"
 
 int	take_forks(t_philosopher *philos, long start_time)
 {

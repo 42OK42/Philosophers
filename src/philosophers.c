@@ -6,11 +6,11 @@
 /*   By: okrahl <okrahl@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/02 16:42:38 by okrahl            #+#    #+#             */
-/*   Updated: 2024/03/26 13:25:41 by okrahl           ###   ########.fr       */
+/*   Updated: 2024/04/17 16:39:26 by okrahl           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../include/philosophers.h"
 
 int	no_one_dead(t_data	*data)
 {
