@@ -23,15 +23,17 @@ The challenge is to develop an algorithm that:
 
 ### File Structure
 
+```bash
 philosophers/
 ├── Makefile
 ├── includes/
-│ └── philosophers.h
+│   └── philosophers.h
 └── src/
-├── main.c
-├── init.c
-├── utils.c
-└── monitoring.c
+    ├── main.c
+    ├── init.c
+    ├── utils.c
+    └── monitoring.c
+
 ```
 
 ## Usage
