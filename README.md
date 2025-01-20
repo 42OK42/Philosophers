@@ -21,8 +21,6 @@ The challenge is to develop an algorithm that:
 - **Time Measurement**: Precise time measurement in milliseconds
 - **Memory Management**: Clean allocation and deallocation of resources
 
-## Usage
-
 ### File Structure
 
 philosophers/
@@ -35,6 +33,8 @@ philosophers/
 ├── utils.c
 └── monitoring.c
 ```
+
+## Usage
 
 ### Compilation
 
